@@ -1,10 +1,11 @@
 pipeline {
   agent any
-  stages {
-    
-    triggers {
+      
+  triggers {
         eventTrigger simpleMatch("startDeploy")
-    }
+  }
+  
+  stages {
     
     stage('Pre-production') {
       steps {
