@@ -3,7 +3,7 @@ pipeline {
   stages {
     
     triggers {
-        eventTrigger simpleMatch("helloWorld")
+        eventTrigger simpleMatch("startDeploy")
     }
     
     stage('Pre-production') {
